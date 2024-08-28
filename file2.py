@@ -1,5 +1,5 @@
-from tkinter import *
+import tkinter
 
 ventana = tkinter.Tk()
 
-ventana.mailoop()
+ventana.mainloop()
