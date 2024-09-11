@@ -1,18 +1,17 @@
-import tkinter as tk
-ventana = tk.Tk()
-ventana.title("Contador Creciente")
-ventana.geometry('600x600')
-# Programa de contador creciente
+from tkinter import *
 
+ventana_raiz = Tk()
+ventana_raiz.title("Contador Creciente")
+ventana_raiz.geometry('400x300')
+ventana_raiz.resizable(0,0)
+   
+limite = 20
 def contador_creciente(limite):
     contador = 0
     while contador <= limite:
         print(f"Contador: {contador}")
         contador += 1
 
-# Llamada a la función con un límite definido
-#
-#limite = int(input("Introduce el valor límite del contador: "))
-limite = 20
 contador_creciente(limite)
-ventana.mainloop()
+
+ventana_raiz.mainloop()

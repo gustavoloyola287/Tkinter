@@ -1,19 +1,27 @@
-import tkinter
+from tkinter import *
 
-ventana = tkinter.Tk()
-ventana.geometry("200x300")
-etiqueta = tkinter.Label(ventana, text = "Hola Mundo", background="green")
+ventana_raiz = Tk()
 
-#muestra la etiqueta al medio y arriba
-#etiqueta.pack()
+ventana_raiz.title("Ventana de Prueba")
 
-#muestra la etiqueta a la derecha right. izq abajo
-#etiqueta.pack(side = tkinter.RIGHT)
+ventana_raiz.resizable(1,1)
 
+ventana_raiz.geometry("650x250")
 
-etiqueta.pack(fill  = tkinter.Y, expand = True)
+ventana_raiz.config(bg="light blue")
 
-boton1 = 
+miframe = Frame()
 
+miframe.pack()#fill="both", expand="1"
 
-ventana.mainloop()
+miframe.config(bg="green")
+
+miframe.config(width="200",height="150")
+
+miframe.config(bd=20)
+
+miframe.config(relief = "raised")
+
+miframe.config(cursor = "hand2")
+
+ventana_raiz.mainloop()
