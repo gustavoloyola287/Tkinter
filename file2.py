@@ -2,7 +2,7 @@ import tkinter
 
 ventana = tkinter.Tk()
 ventana.geometry("300x200")
-ventana.title("holanda")
+ventana.title("Holanda")
 
 boton1 = tkinter.Button(ventana)
 boton2 = tkinter.Button(ventana)
